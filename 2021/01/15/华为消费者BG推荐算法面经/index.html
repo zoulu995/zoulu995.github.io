@@ -27,7 +27,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1612263275351">
+  <link rel="stylesheet" href="/css/style.css?v=1612269834338">
 <meta name="generator" content="Hexo 5.3.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -308,19 +308,19 @@ int main() &#123;
 
   <div class="nexmoe-post-footer">
     <section class="nexmoe-comment">
-    <div id="gitment"></div>
-<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-<script src="https://billts.site/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-    owner: 'zoulu995', // 你的 GitHub ID
-    repo: 'zoulu995.github.io', // 存储评论的 repo
-    oauth: {
-        client_id: '05496eca99645d0f208a', // 你的 client ID
-        client_secret: '0450597b958f2452ea92f9a273f9748746a26422' // 你的 client secret
-    },
-})
-gitment.render('gitment')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '05496eca99645d0f208a',
+        clientSecret: '0450597b958f2452ea92f9a273f9748746a26422',
+        id: window.location.pathname,
+        repo: 'zoulu995.github.io',
+        owner: 'zoulu995',
+        admin: 'zoulu995'
+    })
+    gitalk.render('gitalk')
 </script>
 </section>
   </div>
@@ -337,7 +337,7 @@ gitment.render('gitment')
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1612263275352"></script>
+ <script src="/js/app.js?v=1612269834339"></script>
 
   
 
