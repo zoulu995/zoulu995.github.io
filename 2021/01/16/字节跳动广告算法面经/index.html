@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 
-<html lang="zh-Hans">
 
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  
-  <title>字节跳动广告算法面经 - 友谊无价</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="我会尽最大的努力，也能接受最差的结果">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  
-  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="提前批投data部门直接挂了，正式批被广告技术部捞起来笔试了笔试题忘了，感觉不难，无脑跟着Y总就对了">
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="面经,笔试," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="提前批投data部门直接挂了，正式批被广告技术部捞起来笔试了笔试题忘了，感觉不难，无脑跟着Y总就对了">
 <meta property="og:type" content="article">
 <meta property="og:title" content="字节跳动广告算法面经">
 <meta property="og:url" content="http://zouyuhang.xyz/2021/01/16/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%B9%BF%E5%91%8A%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F/index.html">
@@ -25,149 +92,246 @@
 <meta property="article:tag" content="面经">
 <meta property="article:tag" content="笔试">
 <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zouyuhang.xyz/2021/01/16/字节跳动广告算法面经/"/>
+
+
+
+
+
+  <title>字节跳动广告算法面经 | 友谊无价</title>
   
-  <link rel="stylesheet" href="/css/style.css?v=1612270648633">
+
+
+
+
+
+
+
+
 <meta name="generator" content="Hexo 5.3.0"></head>
 
-<body class="mdui-drawer-body-left">
-  
-  <div id="nexmoe-background">
-    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="TomZou" class="mdui-btn mdui-btn-icon"><img src="https://cdn.acwing.com/media/article/image/2020/03/17/2453_d23b1da668-071909164.jpg" alt="TomZou"></a>
-       </div>
-    </div>
-  </div>
-  <div id="nexmoe-header">
-      <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="TomZou">
-            <img src="https://cdn.acwing.com/media/article/image/2020/03/17/2453_d23b1da668-071909164.jpg" alt="TomZou" alt="TomZou">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>Articles</span>2</div>
-        <div><span>Tags</span>2</div>
-        <div><span>Categories</span>0</div>
-    </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                回到首页
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="关于博客">
-            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-            <div class="mdui-list-item-content">
-                关于博客
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="我的朋友">
-            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
-            <div class="mdui-list-item-content">
-                我的朋友
-            </div>
-        </a>
-        
-    </div>
-    <aside id="nexmoe-sidebar">
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-search">
-        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
-            <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
-        </form>
-    </div>
-</div>
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://space.bilibili.com/84049885" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/zoulu995" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-            <i class="nexmoefont icon-github"></i>
-        </a>
-    </div>
-</div>
-  
-  
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
-  <div class="nexmoe-widget-wrap">
-    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/%E7%AC%94%E8%AF%95/" style="font-size: 10px;">笔试</a> <a href="/tags/%E9%9D%A2%E7%BB%8F/" style="font-size: 10px;">面经</a>
-    </div>
     
-  </div>
+  
 
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Archive</h3>
-    <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a><span class="archive-list-count">2</span></li></ul>
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">友谊无价</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
+      
+        <p class="site-subtitle">Hello, world.</p>
+      
   </div>
 
-
-<style>
-.nexmoe-widget .archive-list-count{
-	position : absolute;
-	right: 15px;
-	top:9px;
-	color: #DDD;
-}
-</style>
-
-  
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2021 TomZou
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
-    </div>
-</div><!-- .nexmoe-drawer -->
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
-  <div id="nexmoe-content">
-    <div class="nexmoe-primary">
-        <div class="nexmoe-post">
-  
-      <div class="nexmoe-post-cover" style="padding-bottom: 56.25%;"> 
-          <img data-src="https://cdn.acwing.com/media/article/image/2021/02/02/2453_50b213fa65-2-蒋德麟.jpg" data-sizes="auto" alt="字节跳动广告算法面经" class="lazyload">
-          <h1>字节跳动广告算法面经</h1>
-      </div>
-  
-  
-  <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2021年01月16日</a>
-    <a><i class="nexmoefont icon-areachart"></i>1,111 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
 </div>
 
-  <div class="nexmoe-post-right">
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
     
-      <div class="nexmoe-fixed">
-        <div class="nexmoe-valign">
-            <div class="nexmoe-toc">
-                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E9%9D%A2"><span class="toc-number">1.</span> <span class="toc-text">一面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E9%9D%A2"><span class="toc-number">2.</span> <span class="toc-text">二面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E9%9D%A2"><span class="toc-number">3.</span> <span class="toc-text">三面</span></a></li></ol>
-            </div>
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zouyuhang.xyz/2021/01/16/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%B9%BF%E5%91%8A%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://cdn.acwing.com/media/article/image/2020/03/17/2453_d23b1da668-071909164.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="友谊无价">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">字节跳动广告算法面经</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-16T22:36:02+08:00">
+                2021-01-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
         </div>
-      </div>
+      </header>
     
-  </div>
 
-  <article>
-    <p>提前批投data部门直接挂了，正式批被广告技术部捞起来笔试了<br>笔试题忘了，感觉不难，无脑跟着Y总就对了</p>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>提前批投data部门直接挂了，正式批被广告技术部捞起来笔试了<br>笔试题忘了，感觉不难，无脑跟着Y总就对了</p>
 <a id="more"></a>
 <h3 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h3><p>一面是面试官直接找个茶水间面的，有点吵，远程面试体验稍微有点不好，一度让我感觉是刷KPI的</p>
 <ol>
@@ -203,13 +367,13 @@
 <p>算法题感觉也是比较简单的，拷贝链表直接复制当前的节点，然后把random拷贝一下就行<br>二叉树的最远距离一开始忘记咋写了，想转成图用flyd或者DFS来做，后来想到应该就是二叉树的最长的直径？然后DFS求深度的时候维护一下最长直径就可以了</p>
 <h3 id="三面"><a href="#三面" class="headerlink" title="三面"></a>三面</h3><p>三面感觉发挥不是很好，应该凉了，哭<br>就考了一道算法题，然后场景题很多，感觉发挥不出自己的优势</p>
 <ol>
-<li>算法题<pre><code>float W[n];
+<li>算法题<pre class="line-numbers language-none"><code class="language-none">float W[n];
 超大规模的向量W_i，维度1000亿
 分布式的存储来装下1000亿维的W_i向量
 假设有N台机器, 每个机器都有一段可用内存来存储数组W_i的一部分，N台机器的所有的片段拼接起来，是1000亿维
-举例：如果所有机器都均等的存储1000亿/N维，则分布如下
+举例：如果所有机器都均等的存储1000亿&#x2F;N维，则分布如下
 0                   1                   2                 3 . ..            N-1
-1000亿/N    1000亿/N     1000亿/N     1000亿/N    1000亿/N
+1000亿&#x2F;N    1000亿&#x2F;N     1000亿&#x2F;N     1000亿&#x2F;N    1000亿&#x2F;N
 0 1 2 3  -&gt; ...   ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  -&gt; N-1
 11亿          23亿           1亿              0      ...       99亿
 size_t capacity( size_t index)
@@ -219,8 +383,7 @@ index取值从0 - N-1
 请实现一个函数
 float at(size_t i)
 i是全局数组的下标索引
-at(9995873117) -&gt; 0.3</code></pre>
-</li>
+at(9995873117) -&gt; 0.3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li>讲讲推荐系统的流程</li>
 <li>如何解决物品和用户冷启动问题</li>
 <li>热榜和趋势榜对的影响，导致用户的点击都是大家喜欢的，怎么提升个性化呢？</li>
@@ -232,60 +395,253 @@ at(9995873117) -&gt; 0.3</code></pre>
 <p>算法题1:用前缀和维护一下每个机器的存储容量，然后二分搜一下，貌似面试官也没说啥就过了<br>场景题感觉就是想到啥说啥，没能体现自己的优势。</p>
 <p>祝大家秋招offer多多</p>
 
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E9%9D%A2%E7%BB%8F/" rel="tag"># 面经</a>
+          
+            <a href="/tags/%E7%AC%94%E8%AF%95/" rel="tag"># 笔试</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/01/15/%E5%8D%8E%E4%B8%BA%E6%B6%88%E8%B4%B9%E8%80%85BG%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F/" rel="next" title="华为消费者BG推荐算法面经">
+                <i class="fa fa-chevron-left"></i> 华为消费者BG推荐算法面经
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
 
-  
-    
-  <div class="nexmoe-post-copyright">
-    <strong>Author：</strong>TomZou<br>
-    <strong>Link：</strong><a href="http://zouyuhang.xyz/2021/01/16/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%B9%BF%E5%91%8A%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F/" title="http:&#x2F;&#x2F;zouyuhang.xyz&#x2F;2021&#x2F;01&#x2F;16&#x2F;%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%B9%BF%E5%91%8A%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;zouyuhang.xyz&#x2F;2021&#x2F;01&#x2F;16&#x2F;%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%B9%BF%E5%91%8A%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F&#x2F;</a><br>
-    
-      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
-    
-  </div>
 
 
-  
-  
-  <div class="nexmoe-post-meta nexmoe-rainbow">
-    
-    
-        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E7%AC%94%E8%AF%95/" rel="tag">笔试</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E9%9D%A2%E7%BB%8F/" rel="tag">面经</a>
-    
-</div>
-
-  <div class="nexmoe-post-footer">
-    <section class="nexmoe-comment">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
-<div id="gitalk"></div>
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '05496eca99645d0f208a',
-        clientSecret: '0450597b958f2452ea92f9a273f9748746a26422',
-        id: decodeURI(location.pathname),
-        repo: 'zoulu995.github.io',
-        owner: 'zoulu995',
-        admin: 'zoulu995'
-    })
-    gitalk.render('gitalk')
-</script>
-</section>
-  </div>
-</div>
+    <div class="post-spread">
+      
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
-<script>
-	hljs.initHighlightingOnLoad();
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://cdn.acwing.com/media/article/image/2020/03/17/2453_d23b1da668-071909164.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">一面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%9D%A2"><span class="nav-number">2.</span> <span class="nav-text">二面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">三面</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TomZou</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 
-<script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1612270648635"></script>
+
+
+
+
+
 
   
 
@@ -293,6 +649,129 @@ at(9995873117) -&gt; 0.3</code></pre>
 
 
 
-</body>
 
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
 </html>

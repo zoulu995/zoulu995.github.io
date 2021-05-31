@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 
-<html lang="zh-Hans">
 
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  
-  <title>华为消费者BG推荐算法面经 - 友谊无价</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="我会尽最大的努力，也能接受最差的结果">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  
-  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="华为直接在官网投的，也没找内推，在官网自己选部门选岗位投递即可">
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="面经,笔试," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="华为直接在官网投的，也没找内推，在官网自己选部门选岗位投递即可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="华为消费者BG推荐算法面经">
 <meta property="og:url" content="http://zouyuhang.xyz/2021/01/15/%E5%8D%8E%E4%B8%BA%E6%B6%88%E8%B4%B9%E8%80%85BG%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F/index.html">
@@ -20,245 +87,342 @@
 <meta property="og:description" content="华为直接在官网投的，也没找内推，在官网自己选部门选岗位投递即可">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-01-15T14:44:46.000Z">
-<meta property="article:modified_time" content="2021-02-02T10:11:28.332Z">
+<meta property="article:modified_time" content="2021-05-31T17:45:42.000Z">
 <meta property="article:author" content="TomZou">
 <meta property="article:tag" content="面经">
 <meta property="article:tag" content="笔试">
 <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zouyuhang.xyz/2021/01/15/华为消费者BG推荐算法面经/"/>
+
+
+
+
+
+  <title>华为消费者BG推荐算法面经 | 友谊无价</title>
   
-  <link rel="stylesheet" href="/css/style.css?v=1612270648636">
+
+
+
+
+
+
+
+
 <meta name="generator" content="Hexo 5.3.0"></head>
 
-<body class="mdui-drawer-body-left">
-  
-  <div id="nexmoe-background">
-    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="TomZou" class="mdui-btn mdui-btn-icon"><img src="https://cdn.acwing.com/media/article/image/2020/03/17/2453_d23b1da668-071909164.jpg" alt="TomZou"></a>
-       </div>
-    </div>
-  </div>
-  <div id="nexmoe-header">
-      <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="TomZou">
-            <img src="https://cdn.acwing.com/media/article/image/2020/03/17/2453_d23b1da668-071909164.jpg" alt="TomZou" alt="TomZou">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>Articles</span>2</div>
-        <div><span>Tags</span>2</div>
-        <div><span>Categories</span>0</div>
-    </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                回到首页
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="关于博客">
-            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-            <div class="mdui-list-item-content">
-                关于博客
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="我的朋友">
-            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
-            <div class="mdui-list-item-content">
-                我的朋友
-            </div>
-        </a>
-        
-    </div>
-    <aside id="nexmoe-sidebar">
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-search">
-        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
-            <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
-        </form>
-    </div>
-</div>
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://space.bilibili.com/84049885" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/zoulu995" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-            <i class="nexmoefont icon-github"></i>
-        </a>
-    </div>
-</div>
-  
-  
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
-  <div class="nexmoe-widget-wrap">
-    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/%E7%AC%94%E8%AF%95/" style="font-size: 10px;">笔试</a> <a href="/tags/%E9%9D%A2%E7%BB%8F/" style="font-size: 10px;">面经</a>
-    </div>
     
-  </div>
+  
 
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Archive</h3>
-    <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a><span class="archive-list-count">2</span></li></ul>
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">友谊无价</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
+      
+        <p class="site-subtitle">Hello, world.</p>
+      
   </div>
 
-
-<style>
-.nexmoe-widget .archive-list-count{
-	position : absolute;
-	right: 15px;
-	top:9px;
-	color: #DDD;
-}
-</style>
-
-  
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2021 TomZou
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
-    </div>
-</div><!-- .nexmoe-drawer -->
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
-  <div id="nexmoe-content">
-    <div class="nexmoe-primary">
-        <div class="nexmoe-post">
-  
-      <div class="nexmoe-post-cover" style="padding-bottom: 56.25%;"> 
-          <img data-src="https://i.loli.net/2019/07/21/5d33d5dc1531213134.png" data-sizes="auto" alt="华为消费者BG推荐算法面经" class="lazyload">
-          <h1>华为消费者BG推荐算法面经</h1>
-      </div>
-  
-  
-  <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2021年01月15日</a>
-    <a><i class="nexmoefont icon-areachart"></i>973 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 4 分钟</a>
 </div>
 
-  <div class="nexmoe-post-right">
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
     
-      <div class="nexmoe-fixed">
-        <div class="nexmoe-valign">
-            <div class="nexmoe-toc">
-                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%94%E8%AF%95"><span class="toc-number">1.</span> <span class="toc-text">笔试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%94%E8%AF%95%E7%AC%AC%E4%B8%80%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">笔试第一题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%94%E8%AF%95%E7%AC%AC%E4%BA%8C%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">笔试第二题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%94%E8%AF%95%E7%AC%AC%E4%B8%89%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">笔试第三题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E9%9D%A2"><span class="toc-number">5.</span> <span class="toc-text">一面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E9%9D%A2"><span class="toc-number">6.</span> <span class="toc-text">二面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E9%9D%A2-%EF%BC%88%E9%83%A8%E9%97%A8%E5%A4%A7%E4%B8%BB%E7%AE%A1%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">三面 （部门大主管）</span></a></li></ol>
-            </div>
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zouyuhang.xyz/2021/01/15/%E5%8D%8E%E4%B8%BA%E6%B6%88%E8%B4%B9%E8%80%85BG%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://cdn.acwing.com/media/article/image/2020/03/17/2453_d23b1da668-071909164.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="友谊无价">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">华为消费者BG推荐算法面经</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-15T22:44:46+08:00">
+                2021-01-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
         </div>
-      </div>
+      </header>
     
-  </div>
 
-  <article>
-    <p>华为直接在官网投的，也没找内推，在官网自己选部门选岗位投递即可</p>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>华为直接在官网投的，也没找内推，在官网自己选部门选岗位投递即可</p>
 <a id="more"></a>
 <h3 id="笔试"><a href="#笔试" class="headerlink" title="笔试"></a>笔试</h3><p>华为的感觉笔试题都是简单题</p>
 <h3 id="笔试第一题"><a href="#笔试第一题" class="headerlink" title="笔试第一题"></a>笔试第一题</h3><p>题意：一个游乐园门票是5元，游客付钱一般是5，10，20元，给定游客的付钱序列，初始没有零钱，请问能否把所有用户的买门票要补的钱补上，可以输出true，并输出进游乐园的人数，不行输出false，然后输出不能补钱的用户编号（从1开始）</p>
 <p>输入1：<br>5,5,5,5<br>输出1：<br>true,4</p>
 <p>输入2：<br>5,10,10<br>输出2：<br>false,3</p>
 <p>思路：直接存一下当前5元，10元，20元的张数，然后判断一下就可以</p>
-<pre><code class="cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-const int N = 110;
-int x[N], cnt, m[3], idx;
-string str;
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">110</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> x<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> cnt<span class="token punctuation">,</span> m<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> idx<span class="token punctuation">;</span>
+string str<span class="token punctuation">;</span>
 
-int main() &#123;
-    cin &gt;&gt; str;
-    for (int i = 0; i &lt; str.size(); i ++) &#123;
-        int j = i;
-        while (j &lt; str.size() &amp;&amp; str[j] !=&#39;,&#39;) j ++;
-        string temp = str.substr(i, j - i);
-        x[cnt] = stoi(temp);
-        //cout &lt;&lt; x[cnt] &lt;&lt; endl;
-        cnt ++;
-        //cout &lt;&lt; temp &lt;&lt; endl;
-        i = j;
-    &#125;
-    //cout &lt;&lt; cnt &lt;&lt; endl;
-    bool st = true;
-    for (int i = 0; i &lt; cnt; i ++) &#123;
-        idx ++;
-        if (x[i] == 5) m[0] += 1;
-        else if (x[i] == 10) &#123;
-            if (m[0]) m[0] --, m[1]++;
-            else &#123;
-                cout &lt;&lt; &quot;false,&quot; &lt;&lt; idx &lt;&lt; endl;
-                st = false;
-                break;
-            &#125;
-        &#125; else if (x[i] == 20) &#123;
-            if (m[1] &amp;&amp; m[0]) &#123;
-                m[1] --, m[0]--, m[2] ++;
-            &#125; else &#123;
-                cout &lt;&lt; &quot;false,&quot; &lt;&lt; idx &lt;&lt; endl;
-                st = false;
-                break;
-            &#125;
-        &#125; else &#123;
-            cout &lt;&lt; &quot;false,&quot; &lt;&lt; idx &lt;&lt; endl;
-
-            st = false;
-            break;
-        &#125;
-    &#125;
-    if (st) cout &lt;&lt; &quot;true,&quot; &lt;&lt; idx &lt;&lt; endl;
-
-    return 0;
-&#125;</code></pre>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    cin <span class="token operator">>></span> str<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">int</span> j <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>j <span class="token operator">&lt;</span> str<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> str<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">!=</span><span class="token string">','</span><span class="token punctuation">)</span> j <span class="token operator">++</span><span class="token punctuation">;</span>
+        string temp <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> j <span class="token operator">-</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        x<span class="token punctuation">[</span>cnt<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">stoi</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//cout &lt;&lt; x[cnt] &lt;&lt; endl;</span>
+        cnt <span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token comment">//cout &lt;&lt; temp &lt;&lt; endl;</span>
+        i <span class="token operator">=</span> j<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token comment">//cout &lt;&lt; cnt &lt;&lt; endl;</span>
+    <span class="token keyword">bool</span> st <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> cnt<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        idx <span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>x<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">5</span><span class="token punctuation">)</span> m<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>x<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>m<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> m<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">--</span><span class="token punctuation">,</span> m<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"false,"</span> <span class="token operator">&lt;&lt;</span> idx <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                st <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>x<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">20</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>m<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> m<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+                m<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">--</span><span class="token punctuation">,</span> m<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">--</span><span class="token punctuation">,</span> m<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+                cout <span class="token operator">&lt;&lt;</span> <span class="token string">"false,"</span> <span class="token operator">&lt;&lt;</span> idx <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+                st <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token string">"false,"</span> <span class="token operator">&lt;&lt;</span> idx <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+            
+            st <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>st<span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"true,"</span> <span class="token operator">&lt;&lt;</span> idx <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="笔试第二题"><a href="#笔试第二题" class="headerlink" title="笔试第二题"></a>笔试第二题</h3><p>题意：在一个n*m的方格，其中1是可以走，0是障碍物；给定一个步长s，问从左上角到右下角，每步走s的步长，能否顺利通过。第一行输入 s，n，m，表示步长和方格的长宽，借来给n行，每行m个数，表示方格。<br>输出：能通过输出1，否则输出0</p>
 <p>思路：直接DFS或者BFS一下，看看能否到达终点即可，我当时写的DFS。</p>
-<pre><code class="cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-const int N = 110;
-int g[N][N];
-int st[N][N];
-int s, n, m;
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">110</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> g<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> st<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> s<span class="token punctuation">,</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
 
-int dx[4] = &#123;-1, 0, 1, 0&#125;, dy[4] = &#123;0, 1, 0, -1&#125;;
-int dfs(int x, int y) &#123;
-    if (x == n - 1 &amp;&amp; y == m - 1) return 1;
-    for (int i = 0; i &lt; 4; i ++) &#123;
-        int a = x + dx[i] * s, b = y + dy[i] * s;
-        if (a &gt;= 0 &amp;&amp; a &lt; n &amp;&amp; b &gt;= 0 &amp;&amp; b &lt; m &amp;&amp; g[a][b] == 1 &amp;&amp; st[a][b] == 0) &#123;
-            //cout &lt;&lt; a &lt;&lt; b &lt;&lt; endl;
-            st[a][b] = 1;
-            if (dfs(a, b))
-                return 1;
-        &#125;
-    &#125;
-    return 0;
-&#125;
+<span class="token keyword">int</span> dx<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> dy<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">==</span> n <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> y <span class="token operator">==</span> m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">4</span><span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">int</span> a <span class="token operator">=</span> x <span class="token operator">+</span> dx<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">*</span> s<span class="token punctuation">,</span> b <span class="token operator">=</span> y <span class="token operator">+</span> dy<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">*</span> s<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> a <span class="token operator">&lt;</span> n <span class="token operator">&amp;&amp;</span> b <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> b <span class="token operator">&lt;</span> m <span class="token operator">&amp;&amp;</span> g<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">[</span>b<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> st<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">[</span>b<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token comment">//cout &lt;&lt; a &lt;&lt; b &lt;&lt; endl;</span>
+            st<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">[</span>b<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">dfs</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
-int main() &#123;
-    cin &gt;&gt; s &gt;&gt; n &gt;&gt; m;
-    for (int i = 0; i &lt; n; i ++)
-        for (int j = 0; j &lt; m; j ++)
-            scanf(&quot;%d&quot;, &amp;g[i][j]);
-
-    st[0][0] = 1;
-    cout &lt;&lt; dfs(0, 0);
-    return 0;
-&#125;</code></pre>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    cin <span class="token operator">>></span> s <span class="token operator">>></span> n <span class="token operator">>></span> m<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> m<span class="token punctuation">;</span> j <span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>g<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    st<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="笔试第三题"><a href="#笔试第三题" class="headerlink" title="笔试第三题"></a>笔试第三题</h3><p>(⊙﹏⊙)<br>第三题忘记题意了…当时好像写了个伪算法，过了50%的样例（还是自己弱</p>
 <p>笔试总结：华为的笔试1，3题都要处理一下字符串，如果用python的split(‘,’)的话，速度稍微会快一点，C++要稍微处理一下字符串，提取一下中间的数据…</p>
 <h3 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h3><ol>
@@ -284,60 +448,253 @@ int main() &#123;
 </ol>
 <p>虽然开奖了，但是可能面评有点差，base低了，遂拒了。</p>
 
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E9%9D%A2%E7%BB%8F/" rel="tag"># 面经</a>
+          
+            <a href="/tags/%E7%AC%94%E8%AF%95/" rel="tag"># 笔试</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/01/16/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%B9%BF%E5%91%8A%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F/" rel="prev" title="字节跳动广告算法面经">
+                字节跳动广告算法面经 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
 
-  
-    
-  <div class="nexmoe-post-copyright">
-    <strong>Author：</strong>TomZou<br>
-    <strong>Link：</strong><a href="http://zouyuhang.xyz/2021/01/15/%E5%8D%8E%E4%B8%BA%E6%B6%88%E8%B4%B9%E8%80%85BG%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F/" title="http:&#x2F;&#x2F;zouyuhang.xyz&#x2F;2021&#x2F;01&#x2F;15&#x2F;%E5%8D%8E%E4%B8%BA%E6%B6%88%E8%B4%B9%E8%80%85BG%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;zouyuhang.xyz&#x2F;2021&#x2F;01&#x2F;15&#x2F;%E5%8D%8E%E4%B8%BA%E6%B6%88%E8%B4%B9%E8%80%85BG%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E9%9D%A2%E7%BB%8F&#x2F;</a><br>
-    
-      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
-    
-  </div>
 
 
-  
-  
-  <div class="nexmoe-post-meta nexmoe-rainbow">
-    
-    
-        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E7%AC%94%E8%AF%95/" rel="tag">笔试</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E9%9D%A2%E7%BB%8F/" rel="tag">面经</a>
-    
-</div>
-
-  <div class="nexmoe-post-footer">
-    <section class="nexmoe-comment">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
-<div id="gitalk"></div>
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '05496eca99645d0f208a',
-        clientSecret: '0450597b958f2452ea92f9a273f9748746a26422',
-        id: decodeURI(location.pathname),
-        repo: 'zoulu995.github.io',
-        owner: 'zoulu995',
-        admin: 'zoulu995'
-    })
-    gitalk.render('gitalk')
-</script>
-</section>
-  </div>
-</div>
+    <div class="post-spread">
+      
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
-<script>
-	hljs.initHighlightingOnLoad();
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://cdn.acwing.com/media/article/image/2020/03/17/2453_d23b1da668-071909164.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%94%E8%AF%95"><span class="nav-number">1.</span> <span class="nav-text">笔试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%94%E8%AF%95%E7%AC%AC%E4%B8%80%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">笔试第一题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%94%E8%AF%95%E7%AC%AC%E4%BA%8C%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">笔试第二题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%94%E8%AF%95%E7%AC%AC%E4%B8%89%E9%A2%98"><span class="nav-number">4.</span> <span class="nav-text">笔试第三题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E9%9D%A2"><span class="nav-number">5.</span> <span class="nav-text">一面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%9D%A2"><span class="nav-number">6.</span> <span class="nav-text">二面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E9%9D%A2-%EF%BC%88%E9%83%A8%E9%97%A8%E5%A4%A7%E4%B8%BB%E7%AE%A1%EF%BC%89"><span class="nav-number">7.</span> <span class="nav-text">三面 （部门大主管）</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TomZou</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 
-<script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1612270648636"></script>
+
+
+
+
+
 
   
 
@@ -345,6 +702,129 @@ int main() &#123;
 
 
 
-</body>
 
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
 </html>
